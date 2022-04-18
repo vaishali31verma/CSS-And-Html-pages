@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <style>
+     #heading{
+        margin: auto;
+         width: 40%;
+         height: 200px;
+         text-align: center;
+         margin-top: 12px;
+     
+         margin-bottom: 40px;
+     }
+     #heading>h1{
+       font-weight: bold;
+     }
+     #heading>p{
+         line-height: 25px;
+         color: grey;
+     }
+     #container{
+         width: 65%;
+         height: 300px;
+
+         margin: auto;
+         display: flex;
+         
+     }
+     #container>div{
+   
+        width: 30%;
+        height: 300px;
+        margin: auto;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 20px;
+     }
+     #container>div>h1{
+         font-size: 20px;
+         font-weight: bold;
+         margin-bottom: 1px;
+
+     }
+     #container>div>h2{
+         font-size: 35px;
+         color : green;
+         margin-top: 5px;
+         margin-bottom: 0px;
+         font-weight: bolder;
+     }
+     p+p{
+         color: rgb(135, 127, 127);
+         font-size: 15px;
+         margin:  0px 7px 0px 7px ;
+         font-weight: 800;     
+        }
+        h2+p{
+            font-size: 15px;
+            margin-top: 0px;
+            color: rgb(135, 127, 127);
+            font-style: italic;
+            font-weight: 800;
+        }
+        button{
+            border: 1px solid rgb(8, 102, 183);
+            width: 70%;
+            height: 50px;
+            margin-top: 40px;
+            color:rgb(8, 102, 183);
+            font-weight: bold;
+            font-size: 20px;
+            padding-right: 4px;
+            padding-left: 4px;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: rgb(8, 102, 183);
+            color: white;
+            cursor: pointer;
+        }
+        #container>div:nth-child(2)>h2{
+            font-size: 35px;
+         color : orange;
+         margin-top: 5px;
+         margin-bottom: 0px;
+         font-weight: bolder;
+        }
+        #container>div:nth-child(3)>h2{
+            font-size: 35px;
+         color : lightseagreen;
+         margin-top: 5px;
+         margin-bottom: 0px;
+         font-weight: bolder;
+        }
+ </style>
+    
+</head>
+
+<body>
+    <div id="heading">
+        <h1>Choose the Plan that right for your business</h1>
+        <p>we collect reviews from our users so you can get an honest opion of what an exeperince was really like</p>
+    </div>
+    <div id="container">
+      <div><h1>Stater Plan</h1>
+        <h2>Free</h2>
+        <p>per month</p>
+        <p>we collect reviews from our users so you can get an honest opion of what an exeperince was really like</p>
+        <button> Start Now</button>
+      </div>
+      <div><h1>Business Plan</h1>
+        <h2>$39.00</h2>
+        <p>per month</p>
+        <p>we collect reviews from our users so you can get an honest opion of what an exeperince was really like</p>
+        <button>Start Now</button>
+      </div>
+      <div><h1>Stater Plan</h1>
+        <h2>$59.00</h2>
+        <p>per month</p>
+        <p>we collect reviews from our users so you can get an honest opion of what an exeperince was really like</p>
+        <button> Start Now</button>
+      </div>
+    </div>
+    
+</body>
+
+</html>

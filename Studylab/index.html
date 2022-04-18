@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+     *{
+         margin: 0;
+         padding: 0;
+     }
+    .container{
+        width: 100%;
+        height: auto;
+        margin:auto;
+        display: grid;
+        grid-template-columns: (4,1fr);
+        grid-template-rows: 90px 350px 350px 350px;
+        grid-template-areas: "nav nav nav nav"
+                             "box1 box1 box2 box3"
+                             "box1 box1 box4 box5";
+        column-gap: 50px;         
+        row-gap: 30px;                                    
+        }
+    .container>div:nth-child(1){
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        grid-area:  nav;
+       display: flex;
+       justify-content: space-between;
+    }
+    .container>div:nth-child(2){
+        background-color: rgb(50, 21, 45);
+        grid-area: box1;
+    }
+    .container>div:nth-child(3){
+        background-color: rgb(36, 86, 48);
+        grid-area: box2;
+    }
+    .container>div:nth-child(4){
+        background-color: rgb(225, 255, 0);
+        grid-area: box3;
+    }
+    .container>div:nth-child(5){
+        background-color: rgb(4, 255, 0);
+        grid-area: box4;
+    }
+    .container>div:nth-child(6){
+        background-color: rgb(43, 0, 255);
+        grid-area: box5;
+    }
+     .navbar{
+         display: flex;
+        justify-content: space-between;
+        width: 50%;
+        height: 70%;
+        margin-right: 90px;
+       
+     }
+     .navbar>button{
+       
+       margin:auto ;
+       font-size: 20px;
+       border: 0;
+       font-weight: 900;
+       background-color: white;
+     }
+     .study{
+         width: fit-content;
+         height: fit-content;
+         background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%);
+         font-size: 35px;
+         margin-left: 45px;
+         margin-top: 3px;
+         padding: 20px;
+         font-weight: 500;
+         color: antiquewhite;
+
+     }
+
+
+
+
+ </style>
+
+
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div>
+           <div class="study">Studylab</div>
+            <div class="navbar">
+               <button>Home</button>
+               <button>About</button>
+               <button>Course</button>
+               <button>Instructor</button>
+               <button>Blog</button>
+               <button>contact</button>
+                
+            </div>
+        </div>
+        <div>
+            <div class="img">
+                <img src="" alt="">
+            </div>
+            <div><p></p></div>
+            <div><p></p></div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

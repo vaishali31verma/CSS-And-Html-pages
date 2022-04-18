@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 100px 120px 120px 120px 120px;
+            column-gap: 50px;
+            row-gap: 25px;
+
+            grid-template-areas: "navbar navbar navbar navbar"
+                                  "box1 box1   box1 box2 "
+                                  "box1 box1   box1 box3"
+                                  "box1 box1   box1 box4";
+
+                                  
+        }
+       
+      
+        .container>div:nth-child(1){
+            background-color: yellow;
+            grid-area: navbar;
+            font-size: 50px;
+            font-weight: 800;
+           
+
+        }
+        .container>div:nth-child(2){
+            background-color: red;
+            grid-area: box1;
+           
+        }
+        .container>div:nth-child(3){
+            background-color: rgb(19, 209, 16);
+            grid-area: box2;
+        }
+        .container>div:nth-child(4){
+            background-color: rgb(19, 209, 16);
+            grid-area: box3;
+        }
+        .container>div:nth-child(5){
+            background-color: rgb(19, 209, 16);
+            grid-area: box4;
+        }
+        .container>div:nth-child(6){
+            background-color: rgb(19, 209, 16);
+            grid-area: box5;
+         
+        }
+        @media all and (min-width:451px) and (max-width:750px) {
+            .container{
+            
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 100px 180px 120px 120px 120px;
+            grid-template-areas: "navbar navbar navbar"
+                                  "box1 box1 box1 "
+                                  "box1 box1 box1 "
+                                  "box1 box1 box1 "
+                                  "box2 box3 box4 "
+        }
+        .container>div:nth-child(1){
+        background-color: yellow;
+            grid-area: navbar;
+            font-size: 40px;
+            font-weight: 600;
+    }
+    }
+    @media all and (min-width:150px) and (max-width:450px) {
+            .container{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 100px 120px 120px 120px 120px 120px;
+            grid-template-areas: "navbar"
+                                  "box1 "
+                                  "box1"
+                                  "box2"
+                                  "box3 "
+                                  "box4";}
+        .container>div:nth-child(1){
+            font-size: 20px;
+            font-weight: 400;
+            background-color: yellow;
+         }
+        }
+    
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Navigation</div>
+        <div>LEFT BOX</div>
+        <div>RIGHT BOX1</div>
+        <div>RIGHT BOX2</div>
+        <div>RIGHT BOX3</div>
+        <!-- <div></div> -->
+    </div>
+    
+</body>
+</html>

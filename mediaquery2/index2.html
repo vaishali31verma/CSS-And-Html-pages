@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 120px 440px ;
+            grid-template-areas: "nav nav"
+                                 "box1 box2";
+            row-gap: 20px;
+            column-gap: 40px;
+        }
+        #container>div:nth-child(1){
+            background-color: yellow;
+            font-size: 40px;
+            font-weight: bold;
+            grid-area: nav;
+        }
+        #container>div:nth-child(2){
+            background-color: rgb(255, 0, 0);
+            font-size: larger;
+            font-weight: 600;
+            grid-area: box1;
+            color: rgb(62, 60, 60);
+        }
+        #container>div:nth-child(3){
+            background-color: rgb(17, 186, 48);
+            font-size: larger;
+            font-weight: 600;
+            grid-area: box2;
+            color: rgb(74, 71, 71);
+        }
+        @media all and (min-width:150px) and (max-width:450px) {
+            
+            #container{
+            
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 120px 180px 180px ;
+            grid-template-areas: "nav"
+                                 "box1"
+                                 "box2";
+            
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>Navigation</div>
+        <div>LEFT BOX</div>
+        <div>RIGHT BOX</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 70px 270px;
+            grid-template-areas: "nav nav nav nav"
+                "b1 b2 b3 b4";
+            gap: 20px;
+        }
+
+        #container>div:nth-child(1) {
+            background-color: yellow;
+            grid-area: nav;
+        }
+
+        #container>div:nth-child(2) {
+            background-color: rgb(255, 34, 0);
+            grid-area: b1;
+        }
+
+        #container>div:nth-child(3) {
+            background-color: green;
+            grid-area: b2;
+        }
+
+        #container>div:nth-child(4) {
+            background-color: rgb(0, 128, 255);
+            grid-area: b3;
+        }
+
+        #container>div:nth-child(5) {
+            background-color: rgb(119, 120, 122);
+            grid-area: b4;
+        }
+        @media all and (min-width:451px) and (max-width:750px){
+            #container {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 70px 270px 270px;
+            grid-template-areas: "nav nav"
+                                "b1 b3 "
+                                "b2 b4";}
+        }
+        @media all and (min-width:80px) and (max-width:450px){
+            #container {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 70px 270px 270px 270px 270px;
+            grid-template-areas: "nav "
+                                "b1  "
+                                " b4"
+                                "b2"
+                                "b3";}
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div>Navbar</div>
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+    </div>
+</body>
+
+</html>

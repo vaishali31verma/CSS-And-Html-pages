@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    p{
+        font-size: 40px;
+        color: teal;
+        text-align: center;
+        font-weight: 700;
+    }
+    .container{
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        width: 25%;
+        height: 400px;
+        margin: auto;
+        padding-top: 12px;
+        
+    }
+    .display{
+        width: 70%;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        height: 50px;
+        margin: auto;
+        margin-top: 23px;
+        
+    }
+    .boxes{
+        width: 75%;
+        height: 260px; 
+        margin: auto;
+        margin-top: 35px;
+      
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,59px);
+        gap:5px
+        
+    }
+    .boxes>div{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      border-radius: 12px;
+      text-align: center;
+      padding: 15px;
+      font-size: larger;
+      font-weight: bold;
+    }
+    .black{
+        color: white;
+        background-color: black;
+    }
+    .red{
+        color: aliceblue;
+        background-color: rgb(228, 68, 36);
+    }
+    </style>
+   
+</head>
+<body>
+    <p>Masai Calculator</p>
+   
+   
+    <div class="container">
+        <div class="display"></div>
+        <div class="boxes">
+     <div>1</div>
+     <div>2</div>
+     <div>3</div>
+     <div class="black">+</div>
+     <div>4</div>
+     <div>5</div>
+     <div>6</div>
+     <div class="black">-</div>
+     <div>7</div>
+     <div>8</div>
+     <div>9</div>
+     <div class="black">x</div>
+     <div class="red">C</div>
+     <div>o</div>
+     <div class="black">=</div>
+     <div class="black">/</div>
+    </div>
+</div>
+</body>
+</html>

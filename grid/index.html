@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            width: 90%;
+            height: 500px;
+            /* border: 1px solid red; */
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr  ;
+            grid-template-rows: 150px 150px 150px;
+            gap: 20px;
+            grid-template-areas: 
+            "one one two two"
+            "five six six six"
+            "nine nine nine nine"    ;
+           
+        }
+      
+       
+        .container>div:nth-child(1){
+            grid-area: one;
+            background-color: rgb(122, 118, 118);
+            border-radius: 14px;
+            font-size: 50px;
+            font-weight: bold;
+            color: aliceblue;
+            padding-left: 40px;
+            padding-top: 40px;
+        }
+        .container>div:nth-child(3){
+            grid-area: two;
+            background-color: rgb(122, 118, 118);
+            border-radius: 14px;
+            font-size: 50px;
+            font-weight: bold;
+            color: aliceblue;
+            padding-left: 40px;
+            padding-top: 40px;
+        }
+        .container>div:nth-child(5){
+            grid-area: five;
+            background-color: rgb(122, 118, 118);
+            border-radius: 14px;
+            font-size: 50px;
+            font-weight: bold;
+            color: aliceblue;
+            padding-left: 40px;
+            padding-top: 40px;
+        }
+        .container>div:nth-child(6){
+            grid-area: six;
+            background-color: rgb(122, 118, 118);
+            border-radius: 14px;
+            font-size: 50px;
+            font-weight: bold;
+            color: aliceblue;
+            padding-left: 40px;
+            padding-top: 40px;
+        }
+        .container>div:nth-child(9){
+            grid-area: nine;
+            background-color: rgb(122, 118, 118);
+            border-radius: 14px;
+            font-size: 50px;
+            font-weight: bold;
+            color: aliceblue;
+            padding-left: 40px;
+            padding-top: 40px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div >A</div>
+        <div ></div>
+        <div >B</div>
+        <div ></div>
+        <div >C</div>
+        <div>D</div>
+        <div></div>
+        <div ></div>
+        <div >E</div>
+        <div></div>
+        <div></div>
+        <div></div>
+      
+    </div>
+</body>
+</html>

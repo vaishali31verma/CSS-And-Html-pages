@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    p{
+        text-align: center;
+          font-size: 25px;
+          font-weight: 1000;
+          font-family: "Gill Sans", sans-serif;
+          margin-top: 12px;
+    }
+    .conatiner{
+        width: 60%;
+       
+        height: 350px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,350px);
+        gap: 90px;
+        
+
+    }
+    .conatiner>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 12px;
+        
+        
+        
+    }
+    button{
+        border: 1px solid red;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        width: 8%;
+        height: 50px;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 12px;
+        color: red;
+        background-color: white;
+    }
+    .bottom{
+        background-color: white;
+        width: 90%;
+        height:150px;
+        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,120px);
+        gap: 50px;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .bottom>div{
+   
+        border-radius: 12px;
+    }
+    img{
+        width: 100%;
+        border-radius: 12px;
+        height: 120px;
+        
+    }
+    h5{
+        color: rgb(16, 131, 193);
+        font-size: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .conatiner>div>p{
+        font-size: 15px;
+        font-weight: 700;
+        display: block;
+        margin-left: 15px;
+        line-height: 20px;
+        text-align: start;
+        
+    }
+    .conatiner>div>p+p{
+        color: rgb(128, 123, 123);
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 15px;
+        margin-right: 15px;
+        line-height: 20px;
+        text-align: start;
+        margin-bottom: 2px;
+    }
+</style>
+</head>
+<body>
+    <div class="heading">
+        <p>Masai In The News</p>
+    </div>
+    <div class="conatiner">
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ET_3754cc10ec.png">
+            <h5>21 Dec 2021</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.awsf effg refefh weiu</p>
+            <p>with the latest step masai runs one step close to eoijrgr...</p>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/money_Control_c3e25f5ceb.png">
+            <h5>26 oct 2021</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.awsf effg refefh weiu</p>
+            <p>with the latest step masai runs one step close to eoijrgr...</p>
+        </div>
+        <div><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/vccircle_6ef779c958.png">
+            <h5>18 Aug 2021</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.awsf effg refefh weiu</p>
+            <p>with the latest step masai runs one step close to eoijrgr...</p></div>
+    </div>
+    <button>See More</button>
+    <p>Our Invertor Who Believe In Us</p>
+    <div class="bottom">
+       
+        <div><img src="https://www.masaischool.com/img/our-investors/unitus.svg" alt=""></div>
+        <div><img src="https://www.masaischool.com/img/our-investors/omidyar.svg" alt=""></div>
+        <div><img src="https://www.masaischool.com/img/our-investors/indiaQuotient.svg" alt=""></div>
+    </div>
+
+</body>
+</html>
